@@ -22,7 +22,7 @@ app.post('/filmes', (req, res) => {
     const filme = {titulo: titulo, sinopse: sinopse}
     //insere o filme novo na base, NA MEMÓÓÓRIA
     filmes.push(filme)
-    //só para verificar, devolve a lista atualizada
+    //devolver a lista atualizada para recarregar a página
     res.send(filmes)
 })
 
